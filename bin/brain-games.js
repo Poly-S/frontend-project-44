@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import runGame from '../games/cli.js';
+import runGame from '../src/games/cli.js';
 
 runGame();
 // eslint-disable-next-line no-console
