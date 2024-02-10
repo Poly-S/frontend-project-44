@@ -20,19 +20,19 @@ function playCalcGame() {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?');
-  
+
   const numberOfRounds = 3;
-  
+
   for (let i = 0; i < numberOfRounds; i++) {
     const num1 = Math.floor(Math.random() * 100);
     const num2 = Math.floor(Math.random() * 100);
-    
+
     const operators = ['+', '-', '*'];
     const operator = operators[Math.floor(Math.random() * operators.length)];
-    
+
     const question = `${num1} ${operator} ${num2}`;
     const correctAnswer = calculateExpression(num1, num2, operator).toString();
-    
+
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -44,7 +44,7 @@ function playCalcGame() {
       return;
     }
   }
-  
+
   console.log(`Congratulations, ${name}!`);
 }
 
