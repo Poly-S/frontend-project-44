@@ -23,7 +23,7 @@ function playCalcGame() {
 
   const numberOfRounds = 3;
 
-  for (let i = 0; i < numberOfRounds; i++) {
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const num1 = Math.floor(Math.random() * 100);
     const num2 = Math.floor(Math.random() * 100);
 

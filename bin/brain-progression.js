@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 
 function generateProgression(start, diff, length) {
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + i * diff);
   }
   return progression;
@@ -28,7 +28,7 @@ function playProgressionGame() {
   const minDiff = 1;
   const maxDiff = 9;
 
-  for (let i = 0; i < numberOfRounds; i++) {
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const start = Math.floor(Math.random() * (100 - 1 + 1) + 1);
     const diff = Math.floor(Math.random() * (maxDiff - minDiff + 1) + minDiff);
     const length = Math.floor(Math.random() * (maxLength - minLength + 1) + minLength);

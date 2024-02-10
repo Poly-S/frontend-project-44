@@ -6,7 +6,7 @@ function isPrime(number) {
   if (number < 2) {
     return false;
   }
-  for (let i = 2; i <= Math.sqrt(number); i++) {
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -22,7 +22,7 @@ function playPrimeGame() {
 
   const numberOfRounds = 3;
 
-  for (let i = 0; i < numberOfRounds; i++) {
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const number = Math.floor(Math.random() * (100 - 1 + 1) + 1);
     const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
