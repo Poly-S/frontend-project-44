@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../src/utils.js';
-import greetAndGetLogic, { roundsNumber } from '../src/gameLogic.js';
+import { getRandomNumber } from '../utils.js';
+import greetAndGetLogic, { roundsNumber } from '../gameLogic.js';
 
 const gcd = (a, b) => {
   if (b === 0) {
@@ -26,4 +26,4 @@ const playGcdGame = () => {
   return greetAndGetLogic(rounds, description);
 };
 
-export default playGcdGame();
+export default playGcdGame;

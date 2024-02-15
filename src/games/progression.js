@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../src/utils.js';
-import greetAndGetLogic from '../src/gameLogic.js';
+import { getRandomNumber } from '../utils.js';
+import greetAndGetLogic from '../gameLogic.js';
 
 const description = 'What number is missing in the progression?';
 const progressionLength = 10;
@@ -26,4 +26,4 @@ const playProgressionGame = () => {
   return greetAndGetLogic(rounds, description);
 };
 
-export default playProgressionGame();
+export default playProgressionGame;

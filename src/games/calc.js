@@ -37,4 +37,4 @@ const playCalcGame = () => {
   greetAndGetLogic(rounds, description);
 };
 
-export default playCalcGame();
+export default playCalcGame;

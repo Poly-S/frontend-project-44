@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const numberOfRounds = 3;
+export const roundsNumber = 3;
 
 const greetAndGetLogic = (rounds, description) => {
 	console.log('Welcome to the Brain Games!');
@@ -21,7 +21,7 @@ const greetAndGetLogic = (rounds, description) => {
 			return;
 		}
 	}
-	console.log(`Congratulations, ${name}! You've answered all the questions correctly.`);
+	console.log(`Congratulations, ${name}!`);
 };
 
 export default greetAndGetLogic;

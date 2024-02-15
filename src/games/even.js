@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../src/utils.js';
-import greetAndGetLogic from '../src/gameLogic.js';
+import { getRandomNumber } from '../utils.js';
+import greetAndGetLogic from '../gameLogic.js';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -22,4 +22,4 @@ const playEvenGame = () => {
   greetAndGetLogic(rounds, description);
 };
 
-export default playEvenGame();
+export default playEvenGame;

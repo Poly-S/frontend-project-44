@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../src/utils.js';
-import greetAndGetLogic, { roundsNumber } from '../src/gameLogic.js';
+import { getRandomNumber } from '../utils.js';
+import greetAndGetLogic, { roundsNumber } from '../gameLogic.js';
 
 function isPrime(number) {
   if (number < 2) {
@@ -13,10 +13,9 @@ function isPrime(number) {
   return true;
 }
 
-const generateQuestion = () => {
-  const number = getRandomNumber(1, 100);
-  const question = `Is ${number} a prime number?`;
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+const generateRound = () => {
+  const question = getRandomNumber(1, 100);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
@@ -30,4 +29,4 @@ const playPrimeGame = () => {
   return greetAndGetLogic(rounds, description);
 };
 
-export default playPrimeGame();
+export default playPrimeGame;
