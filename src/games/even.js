@@ -13,7 +13,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const playEvenGame = () => {
   const rounds = [];
-  const roundsNumber = 3; 
+  const roundsNumber = 3;
 
   for (let i = 0; i < roundsNumber; i += 1) {
     rounds.push(generateRound());

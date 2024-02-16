@@ -9,9 +9,9 @@ const greetAndGetLogic = (rounds, description) => {
   console.log(description);
 
   for (let i = 0; i < roundsNumber; i += 1) {
-  const [question, answer] = rounds[i];
-  console.log(`Question: ${question}`);
-  const userAnswer = readlineSync.question('Your answer: ');
+    const [question, answer] = rounds[i];
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === answer) {
       console.log('Correct!');

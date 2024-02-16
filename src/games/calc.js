@@ -1,6 +1,8 @@
 import { getRandomNumber } from '../utils.js';
 import greetAndGetLogic from '../gameLogic.js';
 
+const description = 'What is the result of the expression?';
+
 const generateRandom = () => {
   const num1 = getRandomNumber(1, 100);
   const num2 = getRandomNumber(1, 100);
@@ -17,6 +19,9 @@ const generateRandom = () => {
     case '*':
       result = num1 * num2;
       break;
+    default:
+      result = num1 * num2;
+      break;
   }
 
   const question = `${num1} ${operator} ${num2}`;
@@ -24,11 +29,9 @@ const generateRandom = () => {
   return [question, correctAnswer];
 };
 
-const description = 'What is the result of the expression?';
-
 const playCalcGame = () => {
   const rounds = [];
-  const roundsNumber = 3; 
+  const roundsNumber = 3;
 
   for (let i = 0; i < roundsNumber; i += 1) {
     rounds.push(generateRandom());
