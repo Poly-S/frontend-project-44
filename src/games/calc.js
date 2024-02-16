@@ -1,5 +1,5 @@
 import { getRandomNumber } from '../utils.js';
-import greetAndGetLogic from '../gameLogic';
+import greetAndGetLogic from '../gameLogic.js';
 
 const generateRandom = () => {
   const num1 = getRandomNumber(1, 100);
